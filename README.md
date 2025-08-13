@@ -1,22 +1,24 @@
 # Image-recognition
 Devtown project
-# Vision AI in One Day – CIFAR-10 (Bootcamp Submission)
+# Vision AI  – CIFAR-10 (Bootcamp Submission)
 
 An end-to-end image recognition project that compresses a 5-day curriculum into a single workflow.  
 **Tech:** TensorFlow/Keras, Transfer Learning (MobileNetV2), Streamlit demo app.
 
 ## 🚀 Quick Start
-### Option A — Colab (recommended)
-1. Open `Vision_AI_OneDay_Colab.ipynb` in **Google Colab**.
+### Option A — Colab 
+1. Open `Vision_AI.ipynb` in **Google Colab**.
 2. **Enable GPU:** Runtime → Change runtime type → **T4 GPU**.
 3. **Run all** cells. Artifacts will be saved:
    - Models: `cnn_cifar10.h5`, `aug_cnn_cifar10.h5`, `mobilenetv2_cifar10.h5`
    - Plots: `samples_grid.png`, `cnn_accuracy.png`, `cnn_loss.png`, `cnn_confusion_matrix.png`, `aug_accuracy.png`, `tl_val_acc.png`, `tl_confusion_matrix.png`
 
 ### Option B — Local Streamlit App
-```bash
+
 # 1) Create a fresh env (optional)
-python -m venv .venv && source .venv/bin/activate   # Windows: .venv\\Scripts\\activate
+python -m venv .venv && source .venv/bin/activate   
+
+# Windows: .venv\\Scripts\\activate
 
 # 2) Install deps
 pip install -r requirements.txt
@@ -33,19 +35,19 @@ Open the local URL from Streamlit and upload any image; the app predicts one of 
 🧪 Project Structure
 
 .
-├── Vision_AI_OneDay_Colab.ipynb
-├── app.py                     # Streamlit demo
+├── Vision_AI.ipynb
+├── app.py                     
 ├── requirements.txt
-├── README.md                  # short readme (optional)
-├── README_GITHUB.md           # this file (detailed)
-├── mobilenetv2_cifar10.h5     # exported from notebook (add after training)
-├── plots/                     # (optional) store generated plots here
-└── models/                    # (optional) store .h5 files here
+├── README.md                  
+├── mobilenetv2_cifar10.h5     
+├── plots/                    
+└── models/ 
+├── notebooks/
 
 📊 Results (fill with your numbers)
-CNN Val Accuracy: xx.x%
+CNN Val Accuracy: 59%
 
-Augmented CNN Val Accuracy: yy.y%
+Augmented CNN Val Accuracy: 60%
 
 Transfer Learning Val Accuracy: zz.z% (expected best)
 
