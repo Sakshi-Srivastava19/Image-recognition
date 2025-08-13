@@ -6,25 +6,23 @@ An end-to-end image recognition project that compresses a 5-day curriculum into 
 **Tech:** TensorFlow/Keras, Transfer Learning (MobileNetV2), Streamlit demo app.
 
 ## 🚀 Quick Start
-### Option A — Colab 
+### Colab 
 1. Open `Vision_AI.ipynb` in **Google Colab**.
 2. **Enable GPU:** Runtime → Change runtime type → **T4 GPU**.
 3. **Run all** cells. Artifacts will be saved:
    - Models: `cnn_cifar10.h5`, `aug_cnn_cifar10.h5`, `mobilenetv2_cifar10.h5`
    - Plots: `samples_grid.png`, `cnn_accuracy.png`, `cnn_loss.png`, `cnn_confusion_matrix.png`, `aug_accuracy.png`, `tl_val_acc.png`, `tl_confusion_matrix.png`
 
-### Option B — Local Streamlit App
+### Local Streamlit App
 
-# 1) Create a fresh env (optional)
-python -m venv .venv && source .venv/bin/activate   
-
-# Windows: .venv\\Scripts\\activate
+# 1) Create a fresh env 
+python -m venv .venv && source .venv/bin/activate   # Windows: .venv\\Scripts\\activate
 
 # 2) Install deps
 pip install -r requirements.txt
 
 # 3) Make sure model file exists in the same directory:
-#    mobilenetv2_cifar10.h5  (export it from the Colab notebook)
+     mobilenetv2_cifar10.h5  
 
 # 4) Run the app
 
@@ -45,11 +43,11 @@ Open the local URL from Streamlit and upload any image; the app predicts one of 
 ├── notebooks/
 
 📊 Results (fill with your numbers)
-CNN Val Accuracy: 59%
+CNN Val Accuracy: 67%
 
-Augmented CNN Val Accuracy: 60%
+Augmented CNN Val Accuracy: 68%
 
-Transfer Learning Val Accuracy: zz.z% (expected best)
+Transfer Learning Val Accuracy:expected best
 
 Notes: e.g., augmentation improved generalization; TL converged faster.
 
@@ -60,7 +58,7 @@ Baseline CNN: small Conv → Pool blocks on 32×32 inputs.
 
 Augmentation: rotation/shift/flip via ImageDataGenerator.
 
-Transfer Learning: MobileNetV2 (Imagenet) with head replaced; resized inputs to 96×96; optional fine-tuning of last ~30 layers.
+Transfer Learning: MobileNetV2 (Imagenet) with head replaced; resized inputs to 64×64; optional fine-tuning of last ~30 layers.
 
 🎥 30-sec Demo (what to record)
 Open final prediction cell in the notebook or the Streamlit app.
@@ -84,17 +82,3 @@ MIT (or add your preferred license).
 
 👩‍💻 Author
 Sakshi • Vision AI in One Day (Bootcamp: BUILD AN AI THAT SEES)
-
-
----
-
-### Also handy (from earlier)
-- Colab notebook (end-to-end): [Download `Vision_AI_OneDay_Colab.ipynb`](sandbox:/mnt/data/Vision_AI_OneDay_Colab.ipynb)  
-- Slides template (5 slides): [Download PPTX](sandbox:/mnt/data/Vision_AI_OneDay_Slides.pptx)  
-- Quick checklist: [Download](sandbox:/mnt/data/submission_checklist.txt)
-
-Need me to turn the LinkedIn post into a **graphic card** or tailor the README to your **actual metrics** once you run the notebook? ​:contentReference[oaicite:0]{index=0}​
-
-
-
-
