@@ -6,6 +6,7 @@ An end-to-end image recognition project that compresses a 5-day curriculum into 
 **Tech:** TensorFlow/Keras, Transfer Learning (MobileNetV2), Streamlit demo app.
 
 ## 🚀 Quick Start
+
 ### Colab 
 1. Open `Vision_AI.ipynb` in **Google Colab**.
 2. **Enable GPU:** Runtime → Change runtime type → **T4 GPU**.
@@ -32,17 +33,25 @@ Open the local URL from Streamlit and upload any image; the app predicts one of 
 
 🧪 Project Structure
 
-.
 ├── Vision_AI.ipynb
-├── app.py                     
+
+├── app.py    
+
 ├── requirements.txt
-├── README.md                  
-├── mobilenetv2_cifar10.h5     
-├── plots/                    
-└── models/ 
+
+├── README.md         
+
+├── mobilenetv2_cifar10.h5   
+
+├── plots/  
+
 ├── notebooks/
 
-📊 Results (fill with your numbers)
+└── models/ 
+
+
+## 📊 Results 
+
 CNN Val Accuracy: 67%
 
 Augmented CNN Val Accuracy: 68%
@@ -77,8 +86,8 @@ GitHub repo link + Demo video link.
 🛠 Requirements
 See requirements.txt. Tested with Python 3.10+ and TensorFlow 2.15+.
 
-📄 License
+# 📄 License
 MIT (or add your preferred license).
 
-👩‍💻 Author
+# 👩‍💻 Author
 Sakshi • Vision AI in One Day (Bootcamp: BUILD AN AI THAT SEES)
